@@ -39,8 +39,137 @@
 }
 
 body {
-  font-family: "PT Sanas". sana-serif;
+  font-family: "PT Sanas" . sana-serif;
   font-size: 18px;
   line-height: 21px;
-
+  font-weight: 400;
+  color: #000000;
+  background-color: #FFFFFF;
 }
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-decoration: none;
+}
+
+.navigation-link.navigation-button {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-welcome {
+  text-align: center;
+  background-image: url("../images/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.advantages-town {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.advantages-town-cause {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  text-align: center;
+}
+
+.advantages-list {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item.item-basic {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.advantes-text {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color:  #333333;
+}
+
+.advantes-text.text-advantes {
+  color: #FFFFFF;
+}
+
+.advantes-text.text-item {
+  color: #000000;
+}
+
+.advantages-service {
+  color: #000000;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-service.item-service {
+  background-color: #FFFFFF;
+}
+
+.advantages-road {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.hotel {
+  text-align: center;
+}
+
+.hotel-interest {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.hotel-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.hotel-link {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.subscription {
+  text-align: center;
+  background-image: url("../images/background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.subscription-text {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.subscription-description {
+  font-size: 22px;
+  line-height: 26px;
+  color:  #333333;
+}
+
+.subscription-form {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+
+
