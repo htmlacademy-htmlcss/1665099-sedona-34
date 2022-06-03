@@ -4,14 +4,14 @@
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="header-page">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html">
-        <img class="paghe-header-logo" src="images/logo.svg" width="139" height="70" alt="Логотип городка Седона" />
+        <img class="paghe-header-logo" src="./images/logo.svg" width="139" height="70" alt="Логотип городка Седона" />
       </a>
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -42,21 +42,19 @@
     </nav>
   </header>
   <main class="main-iner">
-    <div class="wraper-hotel">
-      <header class="iner-header">
-        <h1 class="iner-header-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
-              <img class="breadcrumbs-image" src="images/home.svg" width="13" height="13"
-                alt="Переход на главную страницу" />
-            </a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
-          </li>
-        </ul>
-      </header>
+    <header class="iner-header">
+      <h1 class="iner-header-title">Гостиницы Седоны</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">
+            <img class="breadcrumbs-image" src="./images/home.svg" width="13" height="13"
+              alt="Переход на главную страницу" />
+          </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Гостиницы</a>
+        </li>
+      </ul>
       <section class="choice-hotel">
         <h2 class="visually-hidden">Выбор гостиниц с фильтрами</h2>
         <form class="choice-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -110,7 +108,7 @@
           <button class="button-reset" type="reset">Сбросить</button>
         </form>
       </section>
-    </div>
+    </header>
     <section class="catalog-sorting">
       <h2 class="visually-hidden">Сортировка гостиниц</h2>
       <p class="catalog-sorting-filter">Найдено гостиниц: 38</p>
@@ -121,17 +119,20 @@
       </select>
       <ul class="card">
         <li class="card-table">
-          <a class="button" href="#">
+          <a class="button-card" href="#">
+            <img class="card-image" src="./images/table.svg" width="48" height="48" alt="Показать таблицу" />
             <span class="visually-hidden">Показать таблицу</span>
           </a>
         </li>
         <li class="card-slides">
-          <a class="button" href="#">
+          <a class="button-card" href="#">
+            <img class="card-image" src="./images/slides.svg" width="48" height="48" alt="Показать слайды" />
             <span class="visually-hidden">Показать слайды</span>
           </a>
         </li>
         <li class="card-list">
-          <a class="button" href="#">
+          <a class="button-card" href="#">
+            <img class="card-image" src="./images/list.svg" width="48" height="48" alt="Показать список" />
             <span class="visually-hidden">Показать список</span>
           </a>
         </li>
@@ -142,7 +143,7 @@
       <ul class="product-list">
         <li class="product-card">
           <a class="product-card-link" href="">
-            <img class="product-card-image" src="images/catalog/hotel-1.jpg" width="300" height="211"
+            <img class="product-card-image" src="./images/catalog/hotel-1.jpg" width="300" height="211"
               alt="Звездное небо сквозь горы" />
             <h3 class="product-card-title">Amara Resort & Spa</h3>
           </a>
@@ -150,13 +151,13 @@
           <p class="product-card-price">От 4000 ₽</p>
           <a class="product-card-buton button" href="#">ПОДРОБНЕЕ</a>
           <a class="product-card-buton button-favorites" href="#">В ИЗБРАННОЕ</a>
-          <img class="product-card-image-stars" src="images/star-4.svg" width="140" height="37"
+          <img class="product-card-image-stars" src="./images/star-4.svg" width="140" height="37"
             alt="Гостиница пять звезд" />
           <p class="product-card-rating">РЕЙТИНГ: 8,5</p>
         </li>
         <li class="product-card">
           <a class="product-card-link" href="">
-            <img class="product-card-image" src="images/catalog/hotel-2.jpg" width="300" height="211"
+            <img class="product-card-image" src="./images/catalog/hotel-2.jpg" width="300" height="211"
               alt="Восход в горах" />
             <h3 class="product-card-title">Villas at Poco Diablo</h3>
           </a>
@@ -164,26 +165,26 @@
           <p class="product-card-price">От 5000 ₽</p>
           <a class="product-card-buton button" href="#">ПОДРОБНЕЕ</a>
           <a class="product-card-buton button-favorites" href="#">В ИЗБРАННОЕ</a>
-          <img class="product-card-image-stars" src="images/star-4.svg" width="140" height="37"
+          <img class="product-card-image-stars" src="./images/star-4.svg" width="140" height="37"
             alt="Гостиница пять звезд" />
           <p class="product-card-rating">РЕЙТИНГ: 9,2</p>
         </li>
         <li class="product-card">
           <a class="product-card-link" href="">
-            <img class="product-card-image" src="images/catalog/hotel-3.jpg" width="300" height="211" alt="Горы днем" />
+            <img class="product-card-image" src="./images/catalog/hotel-3.jpg" width="300" height="211" alt="Горы днем" />
             <h3 class="product-card-title">Desert Quail Inn</h3>
           </a>
           <p class="product-card-hotel">Гостиница</p>
           <p class="product-card-price">От 2500 ₽</p>
           <a class="product-card-buton button" href="#">ПОДРОБНЕЕ</a>
           <a class="product-card-buton button-favorites" href="#">В ИЗБРАННОЕ</a>
-          <img class="product-card-image-stars" src="images/star-3.svg" width="140" height="37"
+          <img class="product-card-image-stars" src="./images/star-3.svg" width="140" height="37"
             alt="Гостиница три звезды" />
           <p class="product-card-rating">РЕЙТИНГ: 6,9</p>
         </li>
         <li class="product-card">
           <a class="product-card-link" href="">
-            <img class="product-card-image" src="images/catalog/hotel-4.jpg" width="300" height="211"
+            <img class="product-card-image" src="./images/catalog/hotel-4.jpg" width="300" height="211"
               alt="Закат в горах" />
             <h3 class="product-card-title">GreenTree Inn</h3>
           </a>
@@ -191,7 +192,7 @@
           <p class="product-card-price">От 1500 ₽</p>
           <a class="product-card-buton button" href="#">ПОДРОБНЕЕ</a>
           <a class="product-card-buton button-favorites" href="#">В ИЗБРАННОЕ</a>
-          <img class="product-card-image-stars" src="images/star-2.svg" width="140" height="37"
+          <img class="product-card-image-stars" src="./images/star-2.svg" width="140" height="37"
             alt="Гостиница две звезды" />
           <p class="product-card-rating">РЕЙТИНГ: 5,0</p>
         </li>
@@ -255,7 +256,7 @@
     </ul>
     <a class="footer-contacts" href="tel:+78128121212">+7(812)812-12-12</a>
     <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-      <img src="images/logo_htmlacademy.svg" width="115" height="34" alt="Логотип htmlacademy.ru" />
+      <img src="./images/logo_htmlacademy.svg" width="115" height="34" alt="Логотип htmlacademy.ru" />
     </a>
   </footer>
 </body>
