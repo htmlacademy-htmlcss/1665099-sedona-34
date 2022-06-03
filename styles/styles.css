@@ -78,12 +78,15 @@ body {
   display: block;
 }
 
-.advantages-text,
-.servise-text,
+.advantages-text {
+  color: #333333;
+}
+
+.servise-text {
+  color: #333333;
+}
+
 .text-item {
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400;
   color: #333333;
 }
 
@@ -257,7 +260,10 @@ body {
   font-weight: 700;
 }
 
-.product-card-hotel,
+.product-card-hotel {
+  color: #333333;
+}
+
 .product-card-price {
   color: #333333;
 }
@@ -305,7 +311,10 @@ body {
   border-radius: 4px;
 }
 
-.pagination-filter,
+.pagination-filter {
+  color: #333333;
+}
+
 .select-control {
   color: #333333;
 }
