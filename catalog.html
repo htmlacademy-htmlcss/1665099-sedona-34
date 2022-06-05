@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <header class="header-page">
+  <header class="page-header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html">
         <img class="paghe-header-logo" src="./images/logo.svg" width="139" height="70" alt="Логотип городка Седона" />
@@ -27,16 +27,19 @@
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
+            <img class="navigation-search" src="./images/search.svg" width="19" height="19" alt="Поиск" />
             <span class="visually-hidden"> Поиск </span>
           </a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-            <span class="visually-hidden"> Лайки </span>
+            <img class="navigation-favorites" src="./images/favorite.svg" width="19" height="17" alt="Избранное" />
+            <span class="visually-hidden"> Избранное </span>
+            <span class="favorites">12</span>
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link navigation-button" href="#">ХОЧУ СЮДА</a>
+          <a class="navigation-link navigation-button" href="#">Хочу сюда</a>
         </li>
       </ul>
     </nav>
@@ -52,7 +55,11 @@
           </a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Гостиницы</a>
+          <img class="breadcrumbs-image" src="./images/right-arrow.svg" width="6" height="9"
+            alt="Переход с главной страницы к гостиницам" />
+        </li>
+        <li class="breadcrumbs-item">
+          <p class="breadcrumbs-link breadcrumbs-link-current">Гостиницы</p>
         </li>
       </ul>
       <section class="choice-hotel">
@@ -111,7 +118,7 @@
     </header>
     <section class="catalog-sorting">
       <h2 class="visually-hidden">Сортировка гостиниц</h2>
-      <p class="catalog-sorting-filter">Найдено гостиниц: 38</p>
+      <p class="catalog-sorting-filter">НАЙДЕНО ГОСТИНИЦ: 38</p>
       <select class="select-control" aria-label="Сортировка">
         <option value="cheap">Сначала дешевые</option>
         <option value="expensive">Сначала дорогие</option>
@@ -149,8 +156,8 @@
           </a>
           <p class="product-card-hotel">Гостиница</p>
           <p class="product-card-price">От 4000 ₽</p>
-          <a class="product-card-buton button" href="#">ПОДРОБНЕЕ</a>
-          <a class="product-card-buton button-favorites" href="#">В ИЗБРАННОЕ</a>
+          <a class="product-button" href="#">ПОДРОБНЕЕ</a>
+          <a class="product-card-button" href="#">В ИЗБРАННОЕ</a>
           <img class="product-card-image-stars" src="./images/star-4.svg" width="140" height="37"
             alt="Гостиница пять звезд" />
           <p class="product-card-rating">РЕЙТИНГ: 8,5</p>
@@ -163,21 +170,22 @@
           </a>
           <p class="product-card-hotel">Гостиница</p>
           <p class="product-card-price">От 5000 ₽</p>
-          <a class="product-card-buton button" href="#">ПОДРОБНЕЕ</a>
-          <a class="product-card-buton button-favorites" href="#">В ИЗБРАННОЕ</a>
+          <a class="product-button" href="#">ПОДРОБНЕЕ</a>
+          <a class="product-card-button" href="#">В ИЗБРАННОЕ</a>
           <img class="product-card-image-stars" src="./images/star-4.svg" width="140" height="37"
             alt="Гостиница пять звезд" />
           <p class="product-card-rating">РЕЙТИНГ: 9,2</p>
         </li>
         <li class="product-card">
           <a class="product-card-link" href="">
-            <img class="product-card-image" src="./images/catalog/hotel-3.jpg" width="300" height="211" alt="Горы днем" />
+            <img class="product-card-image" src="./images/catalog/hotel-3.jpg" width="300" height="211"
+              alt="Горы днем" />
             <h3 class="product-card-title">Desert Quail Inn</h3>
           </a>
           <p class="product-card-hotel">Гостиница</p>
           <p class="product-card-price">От 2500 ₽</p>
-          <a class="product-card-buton button" href="#">ПОДРОБНЕЕ</a>
-          <a class="product-card-buton button-favorites" href="#">В ИЗБРАННОЕ</a>
+          <a class="product-button" href="#">ПОДРОБНЕЕ</a>
+          <a class="product-card-button" href="#">В ИЗБРАННОЕ</a>
           <img class="product-card-image-stars" src="./images/star-3.svg" width="140" height="37"
             alt="Гостиница три звезды" />
           <p class="product-card-rating">РЕЙТИНГ: 6,9</p>
@@ -190,8 +198,8 @@
           </a>
           <p class="product-card-hotel">Гостиница</p>
           <p class="product-card-price">От 1500 ₽</p>
-          <a class="product-card-buton button" href="#">ПОДРОБНЕЕ</a>
-          <a class="product-card-buton button-favorites" href="#">В ИЗБРАННОЕ</a>
+          <a class="product-button" href="#">ПОДРОБНЕЕ</a>
+          <a class="product-card-button" href="#">В ИЗБРАННОЕ</a>
           <img class="product-card-image-stars" src="./images/star-2.svg" width="140" height="37"
             alt="Гостиница две звезды" />
           <p class="product-card-rating">РЕЙТИНГ: 5,0</p>
@@ -224,9 +232,9 @@
         <option value="six">6</option>
       </select>
     </section>
-    <section class="subscription">
-      <h2 class="subscription-text">Подпишитесь на рассылку</h2>
-      <p class="subscription-description">
+    <section class="subscription-catalog">
+      <h2 class="subscription-text-catalog">Подпишитесь на рассылку</h2>
+      <p class="subscription-description-catalog">
         Только полезная информация и никакого спама, честное бойскаутское!
       </p>
       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -236,7 +244,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <h2 class="visually-hidden">Контакты</h2>
+    <h2 class="visually-hidden">Социальные сети, контакты</h2>
     <ul class="footer-social">
       <li class="footer-social-item">
         <a class="button" href="https://vk.com/htmlacademy">

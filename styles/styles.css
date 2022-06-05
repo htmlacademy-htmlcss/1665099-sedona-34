@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -155,13 +155,15 @@ body {
   background-repeat: no-repeat;
 }
 
-.subscription-text {
+.subscription-text,
+.subscription-text-catalog {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
 }
 
-.subscription-description {
+.subscription-description,
+.subscription-description-catalog {
   font-size: 22px;
   line-height: 26px;
 }
@@ -169,6 +171,7 @@ body {
 .subscription-input {
   font-size: 18px;
   line-height: 21px;
+  font-family: inherit;
 }
 
 .button-form {
@@ -176,6 +179,7 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  font-family: inherit;
 }
 
 .footer-contacts {
@@ -216,6 +220,7 @@ body {
 }
 
 .button-submit {
+  font-family: inherit;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -226,6 +231,7 @@ body {
 }
 
 .button-reset {
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
@@ -241,12 +247,6 @@ body {
 
 .select-control {
   color: #333333;
-}
-
-.button-card {
-  color: #000000;
-  background-color: #FFFFFF;
-  text-decoration: none;
 }
 
 .product-card-link {
@@ -268,7 +268,7 @@ body {
   color: #333333;
 }
 
-.product-card .button {
+.product-button {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -279,7 +279,7 @@ body {
   text-decoration: none;
 }
 
-.product-card .button-favorites {
+.product-card-button {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -317,4 +317,10 @@ body {
 
 .select-control {
   color: #333333;
+}
+
+.subscription-catalog {
+  color: #000000;
+  text-align: center;
+  background-color: #FFFFFF;
 }
