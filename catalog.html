@@ -8,6 +8,7 @@
 </head>
 
 <body>
+  <div class="cantainer-page">
   <header class="page-header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html">
@@ -44,7 +45,8 @@
       </ul>
     </nav>
   </header>
-  <main class="main-iner">
+  <main class="main-iner main-container">
+
     <header class="iner-header">
       <h1 class="iner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
@@ -64,6 +66,7 @@
       </ul>
       <section class="choice-hotel">
         <h2 class="visually-hidden">Выбор гостиниц с фильтрами</h2>
+        <div class="choice-container">
         <form class="choice-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="choice-filter-group">
             <legend class="choice-filter-title">Инфраструктура:</legend>
@@ -113,6 +116,7 @@
           </fieldset>
           <button class="button-submit" type="submit">ПРИМЕНИТЬ</button>
           <button class="button-reset" type="reset">Сбросить</button>
+        </div>
         </form>
       </section>
     </header>
@@ -232,9 +236,9 @@
         <option value="six">6</option>
       </select>
     </section>
-    <section class="subscription-catalog">
-      <h2 class="subscription-text-catalog">Подпишитесь на рассылку</h2>
-      <p class="subscription-description-catalog">
+    <section class="subscription subscription-catalog">
+      <h2 class="subscription-text">Подпишитесь на рассылку</h2>
+      <p class="subscription-description description-text">
         Только полезная информация и никакого спама, честное бойскаутское!
       </p>
       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -267,6 +271,7 @@
       <img src="./images/logo_htmlacademy.svg" width="115" height="34" alt="Логотип htmlacademy.ru" />
     </a>
   </footer>
+  </div>
 </body>
 
 </html>

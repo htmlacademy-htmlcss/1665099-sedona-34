@@ -16,27 +16,31 @@
 
 html {
   height: 100%;
+  background-color: #f2f2f2;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  width: 1200px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #ffffff;
 }
+
+.cantainer-page {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 1200px;
+}
+
+/*Навигация*/
 
 .navigation {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .paghe-header-logo {
@@ -75,10 +79,7 @@ body {
   flex-grow: 1;
 }
 
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
-}
+/*Welcome*/
 
 .main-welcome {
   text-align: center;
@@ -94,10 +95,11 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .advantages-town-cause {
-  width: 654px;
+  width: 660px;
   margin: 0 auto;
   font-size: 22px;
   line-height: 26px;
@@ -105,9 +107,12 @@ body {
   text-align: center;
 }
 
+/*Причины*/
+
 .item-basic {
-  color: #FFFFFF;
-  background-color: #82B3D3;
+
+  color: #ffffff;
+  background-color: #82b3d3;
 }
 
 .advantages-list {
@@ -120,8 +125,16 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
+.item-basic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 400px;
+}
+
 .advantages-image {
   display: block;
+
 }
 
 .advantages-text {
@@ -132,13 +145,28 @@ body {
   color: #333333;
 }
 
-.text-item {
+/*.text-item {
   color: #333333;
-}
+}*/
+
+/*.servise-list {
+  width: 100%;
+  display: flex;
+  background-color: #ffffff;
+}*/
 
 .servise-list {
-  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
+
+.advantages-item {
+  width: 400px;
+}
+
 
 .text-servise {
   font-size: 24px;
@@ -152,31 +180,31 @@ body {
 }
 
 .item-basic .text-advantages {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.item-road {
+/*.item-road {
   background-color: rgba(131, 179, 211, 0.2);
-}
+}*/
 
 .iner-header,
 .item-service {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .service-item {
+  width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.hotel {
-  text-align: center;
-}
+/*Поиск гостиниц в Седоне*/
 
 .hotel-interest {
   width: 297px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+
 }
 
 .hotel-description {
@@ -187,48 +215,78 @@ body {
 }
 
 .hotel-link {
-  widht: 574px;
+  display: flex;
+  width: 574px;
+  padding: 12px 15px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #756157;
   text-decoration: none;
 }
 
+/*Подписаться*/
+
 .subscription {
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
-  background-image: url("../images/background.jpg");
+  background-color: #0000ff;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
-.subscription-text,
-.subscription-text-catalog {
+.subscription-home {
+  background-image: url("../images/background.jpg");
+}
+
+.subscription-catalog {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.subscription-text {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
 }
 
-.subscription-description,
-.subscription-description-catalog {
+.subscription-description {
   font-size: 22px;
   line-height: 26px;
+}
+
+.description-text {
+  color: #333333;
 }
 
 .subscription-input {
   font-size: 18px;
   line-height: 21px;
   font-family: inherit;
+  background-color: #F2F2F2;
+  border: 1px solid #F2F2F2;
+  border-radius: 10px 0px 0px 10px;
 }
 
 .button-form {
+  color: inherit;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
   font-family: inherit;
+  background-color: #82B3D3;
+  border: 1px solid #82B3D3;
+  border-radius: 0px 10px 10px 0px;
+}
+
+/*Footer*/
+
+.footer-container {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
 }
 
 .footer-contacts {
@@ -244,28 +302,36 @@ body {
   background-repeat: no-repeat;
 }
 
+/*Каталог Хлебные крошки*/
+
 .iner-header-title {
   font-size: 68px;
   line-height: 78px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+
+/*Каталог Выбор гостиниц с фильтрами*/
+
+.choice-container {
+  display: flex;
 }
 
 .choice-filter-title {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .choice-filter-list {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .button-submit {
@@ -273,8 +339,8 @@ body {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  color: #FFFFFF;
-  background-color: #82B3D3;
+  color: #ffffff;
+  background-color: #82b3d3;
   text-align: center;
   text-transform: uppercase;
 }
@@ -283,9 +349,11 @@ body {
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
 }
+
+/*Каталог Сортировка гостиниц*/
 
 .catalog-sorting-filter {
   font-size: 30px;
@@ -297,6 +365,8 @@ body {
 .select-control {
   color: #333333;
 }
+
+/*Каталог Карточки гостиниц*/
 
 .product-card-link {
   text-decoration: none;
@@ -321,7 +391,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #756157;
   text-align: center;
   border-radius: 4px;
@@ -332,8 +402,8 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  color: #FFFFFF;
-  background-color: #82B3D3;
+  color: #ffffff;
+  background-color: #82b3d3;
   text-align: center;
   border-radius: 4px;
   text-decoration: none;
@@ -351,14 +421,16 @@ body {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  color: #FFFFFF;
-  background-color: #82B3D3;
+  color: #ffffff;
+  background-color: #82b3d3;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  border: 1px solid #82B3D3;
+  border: 1px solid #82b3d3;
   border-radius: 4px;
 }
+
+/*Каталог Пагинация*/
 
 .pagination-filter {
   color: #333333;
@@ -368,8 +440,3 @@ body {
   color: #333333;
 }
 
-.subscription-catalog {
-  color: #000000;
-  text-align: center;
-  background-color: #FFFFFF;
-}
