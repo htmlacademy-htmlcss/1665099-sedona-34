@@ -16,7 +16,7 @@
 
 html {
   height: 100%;
-  background-color: #f2f2f2;
+  background-color: #E5E5E5;
 }
 
 body {
@@ -88,9 +88,17 @@ body {
   background-repeat: no-repeat;
 }
 
+.main-image {
+  padding-top: 51px;
+  padding-bottom: 82px;
+}
+
 .advantages-town {
   width: 620px;
+  height: 72px;
   margin: 0 auto;
+  padding-top: 63px;
+  padding-bottom: 31px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -100,7 +108,9 @@ body {
 
 .advantages-town-cause {
   width: 660px;
+  height: 26px;
   margin: 0 auto;
+  padding-bottom: 90px;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
@@ -118,23 +128,29 @@ body {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  background-color: rgba(131, 179, 211, 0.12);
+  /*background-color: rgba(131, 179, 211, 0.12);*/
 }
+
+.cantainer-text {
+  display: flex;
+  width: 1200px;
+  }
+
+  .cantainer-text-item,
+  .advantages-item-text {
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+  }
+
+.advantages-title {
+  padding: 0;
+}
+
 
 .item-basic {
   color: #ffffff;
   background-color: #82b3d3;
-}
-
-.cantainer-text {
-display: flex;
-width: 1200px;
-}
-
-.cantainer-text-item,
-.advantages-item-text {
-  width: 400px;
-  text-align: center;
 }
 
 .advantages-image {
@@ -171,9 +187,8 @@ width: 1200px;
   color: #ffffff;
 }
 
-.iner-header,
 .item-servise {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 .servise-item {
@@ -289,6 +304,7 @@ width: 1200px;
 
 .iner-header {
   width: 1200px;
+  color: #fff;
   background-image: url("../images/background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -345,6 +361,8 @@ width: 1200px;
   background-color: #82b3d3;
   text-align: center;
   text-transform: uppercase;
+  border: 1px solid #82b3d3;
+  border-radius: 4px;
 }
 
 .button-reset {
@@ -353,7 +371,9 @@ width: 1200px;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  background-color: inherit;
   text-align: center;
+  border: none;
 }
 
 /*Каталог Сортировка гостиниц*/
