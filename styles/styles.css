@@ -40,7 +40,7 @@ body {
   overflow: hidden;
 }
 
-.cantainer-page {
+.container-page {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -55,9 +55,9 @@ body {
 }
 
 .paghe-header-logo {
-  width: 139px;
-  padding-left: 70px;
-  padding-right: 30px;
+  /*width: 139px;*/
+  margin-left: 70px;
+  margin-right: 30px;
 }
 
 .navigation-list {
@@ -74,12 +74,11 @@ body {
   margin-left: auto;
 }
 
-.navigation-user .navigation-link {
-  display: block;
-  min-width: 18px;
-  min-height: 18px;
-  padding: 23px 12px;
-}
+/*.navigation-user .navigation-link {
+  display: block;*/
+  /*min-width: 18px;*/
+  /*padding: 23px 12px;
+}*/
 
 .navigation-link {
   display: block;
@@ -90,8 +89,6 @@ body {
   color: #000000;
   text-decoration: none;
 }
-
-
 
 .navigation-button {
   font-size: 16px;
@@ -114,16 +111,13 @@ body {
 }
 
 .main-image {
-  padding-top: 51px;
-  padding-bottom: 82px;
+  margin-top: 51px;
+  margin-bottom: 82px;
 }
 
 .advantages-town {
   width: 620px;
-  height: 72px;
-  margin: 0 auto;
-  padding-top: 63px;
-  padding-bottom: 31px;
+  margin: 63px auto 0px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -133,9 +127,7 @@ body {
 
 .advantages-town-cause {
   width: 660px;
-  height: 26px;
-  margin: 0 auto;
-  padding-bottom: 90px;
+  margin: 31px auto 0px;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
@@ -147,36 +139,32 @@ body {
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  width: 1200px;
+  /*width: 1200px;*/
   margin: 0;
+  margin-top: 90px;
   padding: 0;
   background-color: rgba(131, 179, 211, 0.12);
   list-style-type: none;
 }
 
-/*h2, h3, p {
-  margin: 0;
-}*/
-
-
-.cantainer-text {
+.container-text {
   display: flex;
-  width: 1200px;
+  /*width: 1200px;*/
   }
 
-  .cantainer-text-item {
-    margin: 0 auto;
+  .container-text-item {
+    /*margin: 0 auto;*/
+    margin: 92px 85px;
     width: 230px;
-    height: 200px;
-    padding: 92px 85px;
+    /*padding: 92px 85px;*/
     text-align: center;
   }
 
   .advantages-item-text {
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     width: 230px;
-    height: 179px;
     padding: 102px 85px;
+    /*padding: 102px 85px;*/
     text-align: center;
   }
 
@@ -185,7 +173,6 @@ body {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  height: 56px;
   padding-bottom: 30px;
   text-transform: uppercase;
 }
@@ -193,7 +180,6 @@ body {
 .advantages-text-item,
 .text-item {
   margin: 0;
-  height: 21px;
   padding-bottom: 30px;
 }
 
@@ -209,12 +195,11 @@ body {
 
 .advantages-text {
   margin: 0;
-  height: 63px;
   color: #333333;
 }
 
 .servise-list {
- width: 1200px;
+ /*width: 1200px;*/
   display: flex;
   padding: 0;
   background-color: #ffffff;
@@ -225,7 +210,6 @@ body {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  height: 28px;
   padding-top: 30px;
   padding-bottom: 30px;
   color: #000000;
@@ -233,7 +217,6 @@ body {
 
 .servise-text {
   margin: 0;
-  height: 63px;
   color: #333333;
 }
 
@@ -254,8 +237,7 @@ body {
 }
 
 .servise-item {
-  width: 400px;
-  height: 223px;
+  width: 230px;
   padding: 80px 85px;
   text-align: center;
   background-color: rgba(131, 179, 211, 0.12);
@@ -264,14 +246,13 @@ body {
 /*Поиск гостиниц в Седоне*/
 
 .hotel {
-  height: 417px;
+  /*height: 417px;*/
 }
 
 .hotel-interest {
   margin: 0;
   width: 297px;
-  height: 36px;
-  padding: 91px 451px 44px;
+  margin: 91px 451px 0px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -281,8 +262,7 @@ body {
 .hotel-description {
   margin: 0;
   width: 592px;
-  height: 52px;
-  padding: 0px 304px 56px;
+  margin: 29px 304px 56px;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
@@ -291,7 +271,7 @@ body {
 
 .hotel-link {
   display: flex;
-  margin: 0 auto;
+  margin: 56px 313px 93px;
   width: 544px;
   padding: 12px 15px;
   font-size: 20px;
@@ -306,7 +286,7 @@ body {
 /*Подписаться*/
 
 .subscription {
-  height: 411px;
+  /*height: 411px;*/
   color: #ffffff;
   text-align: center;
   background-color: #0000ff;
@@ -326,27 +306,24 @@ body {
 .subscription-text {
   margin: 0;
   width: 404px;
-  height: 36px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  padding: 94px 398px 29px;
+  padding: 94px 398px 0px;
   text-transform: uppercase;
 }
 
 .subscription-description {
   margin: 0;
   width: 475px;
-  height: 52px;
   font-size: 22px;
   line-height: 26px;
-  padding: 0px 363px 46px;
+  padding: 29px 363px 0px;
 }
 
 .subscription-form {
   width: 800px;
-  height: 60px;
-  margin: 0 200px;
+  padding: 46px 200px 90px;
 }
 
 .description-text {
@@ -358,7 +335,6 @@ body {
   line-height: 21px;
   font-family: inherit;
   width: 87px;
-  height: 21px;
   padding: 20px 491px 19px 22px;
   background-color: #F2F2F2;
   border: 1px solid #F2F2F2;
@@ -381,14 +357,14 @@ body {
 /*Footer*/
 
 .page-footer {
-  height: 120px;
+ /* height: 120px;*/
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
   width: 1060px;
-  padding: 40px 70px 30px;
+  margin: 40px 70px 30px;
   text-align: center;
 }
 
@@ -402,7 +378,6 @@ body {
 .footer-social-item {
   display: block;
   min-width: 18px;
-  min-height: 14px;
 }
 
 .footer-contacts {
@@ -413,8 +388,8 @@ body {
   text-decoration: none;
 }
 
-.iner-header {
-  width: 1200px;
+.inner-header {
+  /*width: 1200px;*/
   color: #fff;
   background-image: url("../images/background.jpg");
   background-color: #0995cc;
@@ -424,7 +399,7 @@ body {
 
 /*Каталог Хлебные крошки*/
 
-.iner-header-title {
+.inner-header-title {
   margin: 0;
   width: 500px;
   font-size: 60px;
@@ -454,7 +429,6 @@ body {
 
 .breadcrumbs-link {
   min-width: 73px;
-  height: 21px;
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
