@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/styles.css" />
 </head>
 
 <body>
@@ -49,9 +49,8 @@
       </div>
     </header>
     <main class="main-iner main-container">
-
       <header class="inner-header">
-        <div class="container">
+        <div class="container-inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -65,71 +64,67 @@
                 alt="Переход с главной страницы к гостиницам" />
             </li>
             <li class="breadcrumbs-item">
-              <p class="breadcrumbs-link breadcrumbs-link-current">Гостиницы</p>
+              <p class="breadcrumbs-link breadcrumbs-link-current">
+                Гостиницы
+              </p>
             </li>
           </ul>
           <section class="choice-hotel">
             <h2 class="visually-hidden">Выбор гостиниц с фильтрами</h2>
             <form class="choice-filter" action="https://echo.htmlacademy.ru/" method="get">
-              <div>
-                <fieldset class="choice-filter-group">
-                  <legend class="choice-filter-title">Инфраструктура:</legend>
-                  <ul class="choice-filter-list">
-                    <li class="choice-filter-item">
-                      <label class="control">
-                        <input class="control-input" type="checkbox" name="infrastructure" checked />
-                        Бассейн
-                      </label>
-                    </li>
-                    <li class="choice-filter-item">
-                      <label class="control">
-                        <input class="control-input" type="checkbox" name="infrastructure" checked />
-                        Парковка
-                      </label>
-                    </li>
-                    <li class="choice-filter-item">
-                      <label class="control">
-                        <input class="control-input" type="checkbox" name="infrastructure" />
-                        Wi-fi
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-              </div>
-              <div>
-                <fieldset class="choice-filter-group">
-                  <legend class="choice-filter-title">Тип Жилья:</legend>
-                  <ul class="choice-filter-list">
-                    <li class="choice-filter-item">
-                      <label class="control">
-                        <input class="control-input" type="radio" name="housing" checked />
-                        Гостиница
-                      </label>
-                    </li>
-                    <li class="choice-filter-item">
-                      <label class="control">
-                        <input class="control-input" type="radio" name="housing" />
-                        Мотель
-                      </label>
-                    </li>
-                    <li class="choice-filter-item">
-                      <label class="control">
-                        <input class="control-input" type="radio" name="housing" />
-                        Апартаменты
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-              </div>
-              <div>
+              <fieldset class="choice-filter-group">
+                <legend class="choice-filter-title">Инфраструктура:</legend>
+                <ul class="choice-filter-list">
+                  <li class="choice-filter-item">
+                    <label class="control">
+                      <input class="control-checkbox" type="checkbox" name="infrastructure" checked />
+                      Бассейн
+                    </label>
+                  </li>
+                  <li class="choice-filter-item">
+                    <label class="control">
+                      <input class="control-checkbox" type="checkbox" name="infrastructure" checked />
+                      Парковка
+                    </label>
+                  </li>
+                  <li class="choice-filter-item">
+                    <label class="control">
+                      <input class="control-checkbox" type="checkbox" name="infrastructure" />
+                      Wi-fi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="choice-filter-group">
+                <legend class="choice-filter-title">Тип Жилья:</legend>
+                <ul class="choice-filter-list">
+                  <li class="choice-filter-item">
+                    <label class="control">
+                      <input class="control-radio" type="radio" name="housing" checked />
+                      Гостиница
+                    </label>
+                  </li>
+                  <li class="choice-filter-item">
+                    <label class="control">
+                      <input class="control-radio" type="radio" name="housing" />
+                      Мотель
+                    </label>
+                  </li>
+                  <li class="choice-filter-item">
+                    <label class="control">
+                      <input class="control-radio" type="radio" name="housing" />
+                      Апартаменты
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <div class="container-button">
                 <button class="button-submit" type="submit">ПРИМЕНИТЬ</button>
                 <button class="button-reset" type="reset">Сбросить</button>
               </div>
             </form>
+          </section>
         </div>
-
-        </section>
-
       </header>
       <section class="catalog-sorting">
         <div class="container">
@@ -226,8 +221,7 @@
             </li>
           </ul>
           <div class="container-pagination">
-          <ul class="pagination">
-
+            <ul class="pagination">
               <li class="pagination-item">
                 <a class="pagination-link pagination-current">1</a>
               </li>
@@ -246,56 +240,57 @@
               <li class="pagination-item">
                 <a class="pagination-link" href="#">10</a>
               </li>
-          </ul>
-          <p class="pagination-filter">Гостиниц на странице:</p>
-          <select class="select-pagination" aria-label="Сортировка">
-            <option value="four">4</option>
-            <option value="five">5</option>
-            <option value="six">6</option>
+            </ul>
+            <div class="container-filter">
+              <p class="pagination-filter">Гостиниц на странице:</p>
+              <select class="select-pagination" aria-label="Сортировка">
+                <option value="four">4</option>
+                <option value="five">5</option>
+                <option value="six">6</option>
+              </select>
+            </div>
+          </div>
         </div>
-        </select>
-  </div>
-  </section>
-  <section class="subscription subscription-catalog">
-    <h2 class="subscription-text">Подпишитесь на рассылку</h2>
-    <p class="subscription-description description-text">
-      Только полезная информация и никакого спама, честное бойскаутское!
-    </p>
-    <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-      <input class="subscription-input" type="text" name="appointment-date" placeholder="Ваш e-mail" />
-      <button class="button-form" type="submit">Подписаться</button>
-    </form>
-  </section>
-  </main>
-  <footer class="page-footer">
-    <div class="container">
-      <h2 class="visually-hidden">Социальные сети, контакты</h2>
-      <div class="footer-container">
-        <ul class="footer-social">
-          <li class="footer-social-item">
-            <a class="button" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Telegram</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">YouTube</span>
-            </a>
-          </li>
-        </ul>
-        <a class="footer-contacts" href="tel:+78128121212">+7(812)812-12-12</a>
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <img src="./images/logo_htmlacademy.svg" width="115" height="34" alt="Логотип htmlacademy.ru" />
-        </a>
+      </section>
+      <section class="subscription subscription-catalog">
+        <h2 class="subscription-text">Подпишитесь на рассылку</h2>
+        <p class="subscription-description description-text">
+          Только полезная информация и никакого спама, честное бойскаутское!
+        </p>
+        <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="subscription-input" type="text" name="appointment-date" placeholder="Ваш e-mail" />
+          <button class="button-form" type="submit">Подписаться</button>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="container">
+        <h2 class="visually-hidden">Социальные сети, контакты</h2>
+        <div class="footer-container">
+          <ul class="footer-social">
+            <li class="footer-social-item">
+              <a class="button" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Telegram</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">YouTube</span>
+              </a>
+            </li>
+          </ul>
+          <a class="footer-contacts" href="tel:+78128121212">+7(812)812-12-12</a>
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+            <img src="./images/logo_htmlacademy.svg" width="115" height="34" alt="Логотип htmlacademy.ru" />
+          </a>
+        </div>
       </div>
-    </div>
-
-  </footer>
+    </footer>
   </div>
 </body>
 
