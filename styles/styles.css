@@ -16,7 +16,7 @@
 
 * {
   box-sizing: border-box;
-  /* outline: 1px solid yellow; */
+  outline: 1px solid yellow; 
 }
 
 html {
@@ -206,12 +206,28 @@ body {
   display: flex;
   padding: 0;
   background-color: #ffffff;
+  
 }
 
 .container-servise {
   display: flex;
   flex-direction: column;
-  padding: 80px 85px;
+  padding: 182px 85px 80px;
+  background-repeat: no-repeat;
+  background-position: top 80px center;
+  /* padding: 80px 85px; */
+ }
+
+.item-housing{
+  background-image: url(../images/housing.svg);
+}
+
+.item-servise {
+  background-image: url(../images/food.svg);
+}
+
+.item-souvenirs {
+  background-image: url(../images/souvenirs.svg);
 }
 
 .servise-image {
@@ -378,6 +394,7 @@ body {
   justify-content: space-between;
   margin: 40px 0px 30px;
   text-align: center;
+  align-items: center;
 }
 
 .footer-social {
@@ -393,6 +410,9 @@ body {
   min-width: 18px;*/
   width: 47px;
   height: 40px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .footer-contacts {
@@ -401,6 +421,18 @@ body {
   line-height: 40px;
   color: #000000;
   text-decoration: none;
+}
+
+.footer-social-wk {
+  background-image: url(../images/social-twitter.svg);
+}
+
+.footer-social-telegram {
+  background-image: url(../images/social-facebook.svg);
+}
+
+.footer-social-youtube {
+  background-image: url(../images/social-youtube.svg);
 }
 
 .inner-header {
@@ -625,11 +657,16 @@ padding: 20px;
   text-align: center;
   border-radius: 4px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .product-card-button {
   background-color: #82b3d3;
 } 
+
+.button-favorites {
+  background-color: #7DB54F;
+}
   
 .product-image-stars {
   display: block;
@@ -666,6 +703,7 @@ padding: 20px;
   margin: 0;
   margin-right: 8px;
   list-style-type: none;
+  cursor: pointer;
 }
 
 .pagination-item:last-child {
