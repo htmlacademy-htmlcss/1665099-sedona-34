@@ -32,7 +32,6 @@ body {
   color: #000000;
   background-color: #F2F2F2;
   width: 1280px;
-  /* background-color: #E5E5E5; */
   margin: 0;
 }
 
@@ -90,8 +89,7 @@ body {
 .navigation-user {
   display: flex;
   flex-wrap: wrap;
-  /* width: 264px; */
-  max-width: 254px;
+  max-width: 264px;
   margin: auto 0 auto auto;
 }
 
@@ -111,14 +109,23 @@ body {
   text-decoration: none;
 }
 
-.navigation-icon {
+.link-user{
+  display: block;
+  padding: 20px 9px;
+ }
+
+.navigation-link-current::before {
   position: absolute;
-  top: 0;
-  right: 35px;
-  bottom: 0;
-  left: 0;
-  margin: auto; 
-  fill: #000
+  right: 17px;
+  bottom: -1px;
+  left: 17px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
+}
+
+.navigation-icon {
+   fill: #000
 } 
 
 /* .favorites {
@@ -128,14 +135,14 @@ line-height: 13px;
 
 .navigation-button {
   width: 160px;
-  min-height: 37px;
+  /* min-height: 37px; */
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   color: #FFFFFF;
   background-color: #756157;
   border-radius: 4px;
-  margin-left: 10px; 
+  margin: 14px 0 14px 20px;
   padding: 9px 15px;
   text-align: center;
   text-transform: uppercase;
@@ -148,19 +155,20 @@ line-height: 13px;
 /*Welcome*/
 
 .main-welcome {
-  text-align: center;
-  background-image: url("../images/index-background.jpg");
-  background-size: 100% auto;
+  height: 485px;
+  padding: 51px 371px 82px 371px;
+  background-image: url(../images/divider.svg), url("../images/index-background.jpg");
   background-repeat: no-repeat;
+  background-position: center bottom, center;
 }
 
-.main-image {
-  margin: 51px 0 82px 0;
-}
+/* .main-image {
+display: block;
+} */
 
 .advantages-town {
   width: 670px;
-  margin: 58px auto 0px;
+  margin: 62px auto 0px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -376,7 +384,6 @@ line-height: 13px;
   margin: 118px auto 0;
 }
 
-
 .subscription-description {
   margin: 29px auto 0;
   width: 475px;
@@ -424,7 +431,7 @@ line-height: 13px;
 .footer-container {
   display: flex;
   justify-content: space-between;
-  margin: 28px 0 30px;
+  margin: 37px 0 30px;
   text-align: center;
   align-items: center;
 }
@@ -438,20 +445,20 @@ line-height: 13px;
 }
 
 .footer-social-item {
-  position: relative;
+  /* position: relative; */
   width: 47px;
-  height: 40px;
-}
+  /* height: 40px;*/
+} 
 
 .social-icon {
-  position: absolute;
+  /* position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  margin: auto;
+  margin: auto; */
   fill: #83B3D3;
-}
+} 
 
 .button:hover .social-icon {
   fill: #68A2CA
@@ -593,6 +600,82 @@ line-height: 13px;
   color: #ffffff;
 }
 
+
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  /* margin-bottom: 16px; */
+  background-color: #000;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #fff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background-color: #dbb590;
+}
+
+.range-toggle:active,
+.range-toggle:focus {
+  outline: 3px solid #dbb590;
+} 
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+} 
+.range-wrapper-inputs {
+  /* display: flex;
+  justify-content: center; */
+  margin-bottom: 32px;
+} 
+
+.choice-filter-label {
+  /* display: flex;
+  margin-right: 5px; */
+} 
+
+.range-input {
+  width: 144px;
+  padding: 14px 17px;
+  /* font: inherit; */
+ /* text-align: center; */
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+border-radius: 4px ;
+  /* appearance: textfield; */
+} 
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+
+
+
+
+
 .container-button {
   display: flex;
   flex-direction: column;
@@ -670,38 +753,61 @@ line-height: 13px;
 }
 
 .card {
+  /* width: 160px; */
   display: flex;
   margin-left: auto;
   padding: 0;
   list-style-type: none;
 }
 
+.button-card {
+  display: block; 
+  width: 48px;
+  min-height: 48px;  
+  padding: 12px 15px;  
+} 
+
 .card-item {
   margin-right: 8px;
 }
-
 .card-item:last-child {
   margin-right: 0;
 }
 
-.button-viem {
-  fill: #000;
+.button-card{
   border: 2px solid #E5E5E5;
   border-radius: 4px;
 } 
 
-.viem-current {
+.button-viem {
+  fill: #000;
+}
+
+.card-current {
   border: 2px solid #000;
 } 
 
-.button-card:hover .button-viem,
+.button-card:hover,
+.button-card:active {
+border: 2px solid #000000;
+}
+
+.button-card:focus {
+  border: 2px solid #68A2CA;
+} 
+
+/* .card-current {
+  border: 2px solid #000;
+}  */
+
+/* .button-card:hover .button-viem,
 .button-card:active .button-viem {
 border: 2px solid #000000;
 }
 
 .button-card:focus .button-viem {
   border: 2px solid #68A2CA;
-}
+} */
 
 /*Каталог Карточки гостиниц*/
 
