@@ -70,7 +70,7 @@
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="m.16 6.15 6-5.5 6 5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z" />
                 </svg>
-                <!-- <img class="breadcrumbs-image" src="./images/home.svg" width="13" height="13" 
+                <!-- <img class="breadcrumbs-image" src="./images/home.svg" width="13" height="13"
                   alt="Переход на главную страницу" /> -->
               </a>
             </li>
@@ -140,8 +140,6 @@
                   </li>
                 </ul>
               </fieldset>
-
-
               <fieldset class="choice-filter-group">
                 <legend class="choice-filter-title">Стоимость, ₽:</legend>
                 <div class="range">
@@ -167,9 +165,6 @@
                   </div>
                 </div>
               </fieldset>
-
-
-
               <div class="container-button">
                 <button class="button-submit" type="submit">ПРИМЕНИТЬ</button>
                 <button class="button-reset" type="reset">Сбросить</button>
@@ -183,10 +178,11 @@
           <h2 class="visually-hidden">Сортировка гостиниц</h2>
           <div class="container-sorting">
             <p class="catalog-sorting-filter">НАЙДЕНО ГОСТИНИЦ: 38</p>
-            <select class="select-control" aria-label="Сортировка">
+            <select class="select-control control-select" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
               <option value="expensive">Сначала дорогие</option>
               <option value="luxury">Сначала люкс</option>
+              <span class="visually-hidden select-icon">.</span>
             </select>
             <ul class="card">
               <li class="card-item item-current">
@@ -336,7 +332,7 @@
             </ul>
             <div class="container-filter">
               <p class="pagination-filter">Гостиниц на странице:</p>
-              <select class="select-pagination" aria-label="Сортировка">
+              <select class="select-pagination pagination-select" aria-label="Сортировка">
                 <option value="four">4</option>
                 <option value="five">5</option>
                 <option value="six">6</option>
