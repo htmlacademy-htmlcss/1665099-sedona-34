@@ -31,7 +31,7 @@ body {
   font-weight: 400;
   color: #000000;
   background-color: #F2F2F2;
-  width: 1280px;
+  /* width: 1280px; */
   margin: 0;
 }
 
@@ -749,6 +749,21 @@ body {
   content: "";
 }
 
+.control-checkbox:hover + .mark-checkbox,
+.control-radio:hover + .mark-radio {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control-checkbox:focus + .mark-checkbox,
+.control-radio:focus + .mark-radio {
+  box-shadow: 0 0 0 3px #83B3D3;
+}
+
+.control-checkbox:active + .mark-checkbox,
+.control-radio:active + .mark-radio {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 .range-wrapper-inputs {
   display: flex;
   justify-content: center;
@@ -817,6 +832,21 @@ body {
   cursor: pointer;
 }
 
+.range-input:hover {
+  border: 2px solid #FFFFFF;
+  opacity: 0.6;
+}
+
+.range-input:focus {
+  box-shadow: 0 0 0 3px #81B3D2,
+  inset  0 0 0 3px #81B3D2;
+}
+
+.range-input:active {
+  background-color: #756257;
+}
+
+
 .range-toggle:hover {
   background-color: #dbb590;
 }
@@ -858,6 +888,20 @@ body {
   cursor: pointer;
 }
 
+.button-submit:hover {
+  background-color: #68A2CA;
+}
+
+.button-submit:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
+}
+
+.button-submit:disabled {
+  color: #fff;
+  background-color: #E5E5E5;
+}
+
 .button-reset {
   width: 80px;
   font-family: inherit;
@@ -865,9 +909,22 @@ body {
   line-height: 20px;
   padding: 0;
   margin-top: 20px;
-  color: #ffffff;
+  color: #fff;
   background-color: inherit;
   border: none;
+}
+
+.button-reset:hover {
+  opacity: 0.6;
+}
+
+.button-reset:focus {
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.button-reset:active {
+  opacity: 0.3;
 }
 
 /*Каталог Сортировка гостиниц*/
