@@ -245,7 +245,7 @@
     </footer>
   </div>
 
-  <!-- <div class="modal-container">
+  <div class="modal-container">
     <div class="modal modal-auth">
       <button class="modal-close-button">
         <span class="visually-hidden">Закрыть</span>
@@ -254,54 +254,56 @@
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <form class="modal-form">
           <div class="modal-wrapper">
-            <label class="modal-label" for="chek-in">Дата Заезда</label>
+            <label class="modal-label label-in" for="chek-in">Дата Заезда</label>
             <input class="modal-input" type="text" id="chek-in" name="chek-in" placeholder="27 апреля 2020" required>
             <button class="modal-calendar" type="button">
               <span class="visually-hidden">Выбрать дату заезда</span>
             </button>
-            <p class="modal-message">Мы не можем отправить вас в прошлое</p>
+            <p class="modal-message message-error">Мы не можем отправить вас в прошлое</p>
           </div>
           <div class="modal-wrapper">
-            <label class="modal-label" for="chek-out">Дата Выезда</label>
+            <label class="modal-label label-out" for="chek-out">Дата Выезда</label>
             <input class="modal-input" type="text" id="chek-out" name="chek-out" placeholder="1 сентября 2021" required>
             <button class="modal-calendar" type="button">
               <span class="visually-hidden">Выбрать дату выезда</span>
             </button>
             <p class="modal-message">На эти даты есть свободные номера. Пока есть.</p>
           </div>
-          <div class="modal-adults">
-            <label class="adults-label" for="adults">Взрослые:</label>
-            <button class="button-minus" type="button">
-              <span class="visually-hidden">Уменьшить количество</span>
-            </button>
-            <input class="adults-input" id="adults" type="number" name="adults" placeholder="2">
-            <button class="button-minus" type="button">
-              <span class="visually-hidden">Увеличить количество</span>
-            </button>
-          </div>
-          <div class="modal-children">
-            <span class="form-label form-label-icon">
-              <label class="children-label" for="children">Дети:</label>
-              <span class="tooltip">
-                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+          <div class="container-modal">
+            <div class="modal-adults">
+              <label class="adults-label" for="adults">Взрослые:</label>
+              <button class="button-minus" type="button">
+                <span class="visually-hidden">Уменьшить количество</span>
+              </button>
+              <input class="adults-input" id="adults" type="number" name="adults" placeholder="2">
+              <button class="button-minus" type="button">
+                <span class="visually-hidden">Увеличить количество</span>
+              </button>
+            </div>
+            <div class="modal-children">
+              <span class="form-label form-label-icon">
+                <label class="children-label" for="children">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
 
-                </button>
-                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
-                  вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
+                    вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
               </span>
-            </span>
-            <button class="button-minus" type="button">
-              <span class="visually-hidden">Уменьшить количество</span>
-            </button>
-            <input class="children-input" id="children" type="number" name="children" placeholder="1">
-            <button class="button-minus" type="button">
-              <span class="visually-hidden">Увеличить количество</span>
-            </button>
+              <button class="button-minus" type="button">
+                <span class="visually-hidden">Уменьшить количество</span>
+              </button>
+              <input class="children-input" id="children" type="number" name="children" placeholder="1">
+              <button class="button-minus" type="button">
+                <span class="visually-hidden">Увеличить количество</span>
+              </button>
+            </div>
           </div>
           <a class="modal-tofind" href="catalog.html">Найти</a>
         </form>
       </section>
-    </div> -->
+    </div>
 
   </div>
 </body>
