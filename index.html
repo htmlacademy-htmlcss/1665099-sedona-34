@@ -166,7 +166,6 @@
         <p class="hotel-description">
           Укажите предполагаемые даты поездки, <br> <span class="description">и мы покажем вам лучшие предложения
             гостиниц в Седоне</span>
-
         </p>
         <a class="hotel-link" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
@@ -212,7 +211,7 @@
                       d="M16.79.6.84 6.75c-1.09.43-1.08 1.04-.2 1.31l4.1 1.28 9.47-5.98c.44-.27.85-.12.52.18l-7.68 6.92-.28 4.22c.41 0 .6-.19.83-.41l1.99-1.93 4.13 3.05c.77.42 1.31.2 1.5-.7l2.72-12.8C18.22.77 17.5.27 16.79.59Z" />
                   </g>
                   <defs>
-                    <clipPath id="a">
+                    <clipPath id="b">
                       <path d="M0 0h18v17H0z" />
                     </clipPath>
                   </defs>
@@ -244,14 +243,12 @@
       </div>
     </footer>
   </div>
-
-  <div class="modal-container">
+  <div class="modal-container modal-container-close">
     <div class="modal modal-auth">
       <button class="modal-close-button">
         <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
           <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z" />
         </svg>
-
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
@@ -277,26 +274,22 @@
             <div class="modal-adults">
               <label class="adults-label" for="adults">Взрослые:</label>
               <div class="minus-plus">
-
                 <button class="button-minus" type="button">
-                  <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black" />
+                  <svg class="minus-icon" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 1L13 1V0L0 0Z" />
                   </svg>
-
                   <span class="visually-hidden">Уменьшить количество</span>
                 </button>
                 <input class="quantity-input" id="adults" type="number" name="adults" placeholder="2">
                 <button class="button-plus" type="button">
-                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black" />
+                  <svg class="plus-icon" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
                   </svg>
                   <span class="visually-hidden">Увеличить количество</span>
                 </button>
               </div>
             </div>
-
             <div class="modal-children">
-
               <label class="children-label" for="children">Дети:</label>
               <span class="form-label form-label-icon">
                 <span class="tooltip">
@@ -312,7 +305,6 @@
                         </clipPath>
                       </defs>
                     </svg>
-
                   </button>
                   <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
                     вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
@@ -320,22 +312,21 @@
               </span>
               <div class="minus-plus">
                 <button class="button-minus" type="button">
-                  <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black" />
+                  <svg class="minus-icon" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 1L13 1V0L0 0Z" />
                   </svg>
                   <span class="visually-hidden">Уменьшить количество</span>
                 </button>
                 <input class="quantity-input" id="children" type="number" name="children" placeholder="1">
                 <button class="button-plus" type="button">
-                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black" />
+                  <svg class="plus-icon" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
                   </svg>
                   <span class="visually-hidden">Увеличить количество</span>
                 </button>
               </div>
             </div>
           </div>
-
           <a class="modal-tofind" href="catalog.html">Найти</a>
         </form>
       </section>

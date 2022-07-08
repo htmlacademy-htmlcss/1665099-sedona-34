@@ -31,7 +31,6 @@ body {
   font-weight: 400;
   color: #000000;
   background-color: #F2F2F2;
-  /* width: 1280px; */
   margin: 0;
 }
 
@@ -660,7 +659,7 @@ body {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   color: #ffffff;
 }
 
@@ -856,7 +855,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 59px 0 0 70px;
+  margin: 61px 0 0 70px;
 }
 
 .button-submit {
@@ -1254,7 +1253,6 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  /* overflow: hidden; */
   background-image: url(../images/down-arrow.svg);
   background-repeat: no-repeat;
   background-position: 88% 40%;
@@ -1270,6 +1268,10 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
+.modal-container-close {
+  display: none;
+}
+
 .modal {
   position: relative;
   margin: 394px auto auto;
@@ -1282,7 +1284,6 @@ body {
 .modal-auth {
   width: 715px;
   min-height: 561px;
-
 }
 
 .modal-close-button {
@@ -1295,9 +1296,6 @@ body {
   border: none;
   background-color: #f2f2f2;
   border-radius: 50%;
-  /* background-image: url(../images/close.svg);
-  background-repeat: no-repeat;
-  background-position: center; */
   cursor: pointer;
 }
 
@@ -1307,7 +1305,6 @@ body {
 
 .modal-close-button:focus {
   background-color: #E6E6E6;
-  ;
   outline: 3px solid #83B3D3;
 }
 
@@ -1344,7 +1341,6 @@ body {
 
 .modal-wrapper {
   position: relative;
-
 }
 
 .modal-wrapper:nth-child(1) {
@@ -1381,7 +1377,6 @@ body {
   background-color: #fff;
 }
 
-
 .modal-calendar {
   position: absolute;
   margin: 0;
@@ -1409,14 +1404,9 @@ body {
   color: #ff5757;
 }
 
-
-
-
-
 .container-modal {
   display: flex;
 }
-
 
 .modal-adults {
   display: flex;
@@ -1426,11 +1416,8 @@ body {
 
 .modal-children {
   display: flex;
-
   width: 230px;
 }
-
-
 
 .minus-plus {
   display: flex;
@@ -1443,26 +1430,33 @@ body {
   font-size: 18px;
   line-height: 21px;
   padding: 10px 12px 10px 6px;
-  /* justify-content: center; */
   text-align: center;
 }
-
-/* .button-minus {
-  padding: 0 0 0 0;
-}
-
-.button-plus {
-  padding: 0 0 0 0;
-} */
 
 .quantity-input,
 .button-minus,
 .button-plus {
-  /* justify-content: center; */
   width: 33%;
   border: none;
   outline: none;
   background-color: #F2F2F2;
+}
+
+.plus-icon,
+.minus-icon {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.button-plus:hover .plus-icon,
+.button-minus:hover .minus-icon {
+  fill: #000;
+}
+
+.button-plus:focus,
+.button-minus:focus {
+  /* fill: #000; */
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
 }
 
 .quantity-input::-webkit-outer-spin-button,
@@ -1471,17 +1465,8 @@ body {
   margin: 0;
 }
 
-/* .adults-input {
-  width: px;
-}
-
-.children-input {
-width: 25px;
-} */
-
 .adults-label {
   width: 91px;
-  /* margin-right: 64px; */
   margin: auto 64px auto 0;
   font-size: 20px;
   line-height: 26px;
@@ -1498,23 +1483,6 @@ width: 25px;
   font-weight: 700;
 }
 
-/* .children-label {
-  margin-right: 43px;
-} */
-
-/* .button-minus {
-  background-image: url(../images/minus.svg);
-} */
-
-
-
-
-
-
-
-
-
-
 .form-label-icon {
   position: relative;
   padding-right: 16px;
@@ -1530,12 +1498,10 @@ width: 25px;
   background-color: #83B3D3;
 }
 
-
-
 .tooltip-icon {
   width: 100%;
   height: 100%;
-  fill: #000;
+  fill: #fff;
   display: block;
   padding: 0 0 0 12px;
 }
@@ -1545,7 +1511,6 @@ width: 25px;
   background-color: #83B3D3;
   padding: 0;
   margin: 0;
-  /* display: block; */
 }
 
 .tooltip-toggle:hover .tooltip-icon {
@@ -1566,15 +1531,11 @@ width: 25px;
   position: absolute;
   top: 100%;
   margin-top: 15px;
-  /* bottom: 100%; */
-  /* margin-bottom: 6px; */
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-  /* display: none; */
+  display: none;
 }
-
-
 
 .tooltip-toggle:hover+.tooltip-text,
 .tooltip-toggle:focus+.tooltip-text {
@@ -1607,8 +1568,21 @@ width: 25px;
   background-color: #83B3D3;
   border-radius: 10px;
   display: flex;
-  /* justify-content: center;
-  align-items: center;
-  text-align: center; */
   text-transform: uppercase;
+}
+
+.modal-tofind:hover {
+  background-color: #68A2CA;
+  border-radius: 10px;
+}
+
+.modal-tofind:focus {
+  background-color: #68A2CA;
+  outline: 3px solid #756257;
+  border-radius: 10px;
+}
+
+.modal-tofind:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #68A2CA;
 }
