@@ -1269,7 +1269,7 @@ body {
 }
 
 .modal-container-close {
-  /* display: none; */
+  display: none;
 }
 
 .modal {
@@ -1348,7 +1348,7 @@ body {
 }
 
 .modal-wrapper:nth-child(2) {
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 }
 
 .modal-input {
@@ -1430,6 +1430,7 @@ body {
 }
 
 .quantity-input {
+  font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   padding: 10px 12px 10px 6px;
@@ -1440,16 +1441,26 @@ body {
 .button-minus,
 .button-plus {
   width: 33%;
+  margin: 0;
+  padding: 0;
   border: none;
   outline: none;
   background-color: #F2F2F2;
 }
 
+.left {
+margin-right: 5px;
+}
+
+.right{
+margin-right: 10px;
+}
+
 .plus-icon,
 .minus-icon {
-  width: 16px;
-  height: 16px;
-  fill: rgba(0, 0, 0, 0.3);
+  width: 13px;
+  height: 13px;
+  fill: rgba(0, 0, 0, 1);
 }
 
 .button-plus:hover .plus-icon,
@@ -1561,7 +1572,7 @@ body {
 
 .modal-tofind {
   width: 575px;
-  margin-top: 40px;
+  margin-top: 39px;
   padding: 12px 26px;
   font-size: 20px;
   line-height: 36px;
