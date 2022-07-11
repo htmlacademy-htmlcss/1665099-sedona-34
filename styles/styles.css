@@ -1348,7 +1348,7 @@ body {
 }
 
 .modal-wrapper:nth-child(2) {
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 }
 
 .modal-input {
@@ -1361,18 +1361,21 @@ body {
   border: none;
 }
 
-.modal-input:hover {
+.modal-input:hover,
+.quantity-input:hover {
   background-color: #E6E6E6;
   border-radius: 4px;
 }
 
-.modal-input:focus {
+.modal-input:focus,
+.quantity-input:focus {
   background-color: #E6E6E6;
   outline: 3px solid #83B3D3;
   border-radius: 4px;
 }
 
-.modal-input:not(:placeholder-shown) {
+.modal-input:not(:placeholder-shown),
+.quantity-input:not(:placeholder-shown) {
   outline: 3px solid black;
   background-color: #fff;
 }
@@ -1427,6 +1430,7 @@ body {
 }
 
 .quantity-input {
+  font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   padding: 10px 12px 10px 6px;
@@ -1437,14 +1441,26 @@ body {
 .button-minus,
 .button-plus {
   width: 33%;
+  margin: 0;
+  padding: 0;
   border: none;
   outline: none;
   background-color: #F2F2F2;
 }
 
+.left {
+margin-right: 5px;
+}
+
+.right{
+margin-right: 10px;
+}
+
 .plus-icon,
 .minus-icon {
-  fill: rgba(0, 0, 0, 0.3);
+  width: 13px;
+  height: 13px;
+  fill: rgba(0, 0, 0, 1);
 }
 
 .button-plus:hover .plus-icon,
@@ -1452,9 +1468,8 @@ body {
   fill: #000;
 }
 
-.button-plus:focus,
-.button-minus:focus {
-  /* fill: #000; */
+.button-plus:focus  .plus-icon,
+.button-minus:focus .minus-icon {
   border: 3px solid #83B3D3;
   border-radius: 4px;
 }
@@ -1557,7 +1572,7 @@ body {
 
 .modal-tofind {
   width: 575px;
-  margin-top: 40px;
+  margin-top: 39px;
   padding: 12px 26px;
   font-size: 20px;
   line-height: 36px;
