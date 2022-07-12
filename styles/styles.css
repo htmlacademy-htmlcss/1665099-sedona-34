@@ -1058,7 +1058,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  /* margin: 16px 0; */
+  margin: 16px 0;
 }
 
 .container-product {
@@ -1140,8 +1140,23 @@ body {
   background-color: #7DB54F;
 }
 
-.product-image-stars {
-  display: block;
+.stars {
+  background: url(../images/star.svg);
+  align-self: center;
+  height: 17px;
+  background-repeat: space;
+}
+
+.stars-four {
+  width: 89px;
+}
+
+.stars-three {
+  width: 70px;
+}
+
+.stars-two {
+  width: 42px;
 }
 
 .product-card-rating {
