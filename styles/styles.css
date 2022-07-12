@@ -191,6 +191,7 @@ body {
 .main-welcome {
   height: 484px;
   padding: 51px 371px 82px 371px;
+  background-color: #d3e4ee;
   background-image: url(../images/divider.svg), url(../images/index-background.jpg);
   background-repeat: no-repeat;
   background-position: center 100%, center;
@@ -420,7 +421,7 @@ body {
 }
 
 .subscription-home {
-  background-color: #0000ff;
+  background-color: #77a1b8;
   background-image: url(../images/background.jpg);
 }
 
@@ -511,9 +512,11 @@ body {
 .footer-social {
   display: flex;
   flex-wrap: wrap;
-  min-width: 142px;
+  width: 142px;
   padding: 0;
   list-style-type: none;
+  /* text-align: center; */
+  align-items: center;
 }
 
 .footer-social-item {
@@ -533,7 +536,7 @@ body {
 }
 
 .footer-contacts {
-  width: 720px;
+  min-width: 340px;
   font-size: 40px;
   line-height: 40px;
   color: #000000;
@@ -562,7 +565,7 @@ body {
 
 .inner-header {
   color: #fff;
-  background-color: #0995cc;
+  background-color: #7397b6;
   background-image: url(../images/filter.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -1266,7 +1269,7 @@ body {
 }
 
 .modal-container-close {
-  /* display: none; */
+  display: none;
 }
 
 .modal {
