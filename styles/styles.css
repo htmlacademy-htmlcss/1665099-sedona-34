@@ -575,7 +575,7 @@ body {
 /*Каталог Хлебные крошки*/
 
 .inner-header-title {
-  margin: 0 0 10px 0;
+  margin: 0 0 9px 0;
   width: 500px;
   font-size: 60px;
   line-height: 78px;
@@ -591,13 +591,14 @@ body {
   margin-left: 2px;
 }
 
-.breadcrumbs-item:not(:last-child) {
-  margin-right: 10px;
+.breadcrumbs-link {
+  text-decoration: none;
 }
 
-li>.right-arrow {
-  background-image: url(../images/right-arrow.svg);
-  /* background-repeat: no-repeat;*/
+.breadcrumbs-item:not(:last-child)::after {
+  content: url(../images/right-arrow.svg);
+  display: inline-block;
+  margin: 0 8px 0 5px;
 }
 
 .breadcrumbs-link:hover {
@@ -634,7 +635,7 @@ li>.right-arrow {
 /*Каталог Выбор гостиниц с фильтрами*/
 
 .choice-hotel {
-  margin-top: 38px;
+  margin-top: 39px;
 }
 
 .choice-filter {
@@ -753,6 +754,7 @@ li>.right-arrow {
 .control-radio:disabled+.mark-radio {
   color: rgba(255, 255, 255, 0.2);
 }
+
 
 .range-wrapper-inputs {
   display: flex;
@@ -1069,11 +1071,13 @@ li>.right-arrow {
 
 .product-card-title {
   color: #000000;
+  text-decoration: none;
   width: 300px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  margin: 16px 0;
+  margin: 14px 0;
+  padding: 2px 0;
 }
 
 .container-product {
@@ -1153,6 +1157,10 @@ li>.right-arrow {
 .button-favorites:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #7DB54F;
+}
+
+.product-image-stars {
+  display: block;
 }
 
 .stars {
@@ -1304,7 +1312,7 @@ li>.right-arrow {
 }
 
 .modal-container-close {
-  display: none;
+   display: none;
 }
 
 .modal {
