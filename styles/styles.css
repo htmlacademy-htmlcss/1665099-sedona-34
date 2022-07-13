@@ -16,7 +16,7 @@
 
 * {
   box-sizing: border-box;
-  }
+}
 
 html {
   height: 100%;
@@ -191,6 +191,7 @@ body {
 .main-welcome {
   height: 484px;
   padding: 51px 371px 82px 371px;
+  background-color: #d3e4ee;
   background-image: url(../images/divider.svg), url(../images/index-background.jpg);
   background-repeat: no-repeat;
   background-position: center 100%, center;
@@ -420,7 +421,7 @@ body {
 }
 
 .subscription-home {
-  background-color: #0000ff;
+  background-color: #77a1b8;
   background-image: url(../images/background.jpg);
 }
 
@@ -511,9 +512,11 @@ body {
 .footer-social {
   display: flex;
   flex-wrap: wrap;
-  min-width: 142px;
+  width: 142px;
   padding: 0;
   list-style-type: none;
+  /* text-align: center; */
+  align-items: center;
 }
 
 .footer-social-item {
@@ -533,7 +536,7 @@ body {
 }
 
 .footer-contacts {
-  width: 720px;
+  min-width: 331px;
   font-size: 40px;
   line-height: 40px;
   color: #000000;
@@ -562,7 +565,7 @@ body {
 
 .inner-header {
   color: #fff;
-  background-color: #0995cc;
+  background-color: #7397b6;
   background-image: url(../images/filter.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -572,7 +575,7 @@ body {
 /*Каталог Хлебные крошки*/
 
 .inner-header-title {
-  margin: 0 0 10px 0;
+  margin: 0 0 9px 0;
   width: 500px;
   font-size: 60px;
   line-height: 78px;
@@ -588,8 +591,14 @@ body {
   margin-left: 2px;
 }
 
-.breadcrumbs-item:not(:last-child) {
-  margin-right: 10px;
+.breadcrumbs-link {
+  text-decoration: none;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: url(../images/right-arrow.svg);
+  display: inline-block;
+  margin: 0 8px 0 5px;
 }
 
 .breadcrumbs-link:hover {
@@ -626,7 +635,7 @@ body {
 /*Каталог Выбор гостиниц с фильтрами*/
 
 .choice-hotel {
-  margin-top: 38px;
+  margin-top: 39px;
 }
 
 .choice-filter {
@@ -740,6 +749,12 @@ body {
 .control-radio:active+.mark-radio {
   background-color: rgba(255, 255, 255, 0.3);
 }
+
+.control-checkbox:disabled+.mark-checkbox,
+.control-radio:disabled+.mark-radio {
+  color: rgba(255, 255, 255, 0.2);
+}
+
 
 .range-wrapper-inputs {
   display: flex;
@@ -1028,6 +1043,15 @@ body {
   text-decoration: none;
 }
 
+.wrapper-product:hover {
+  outline: 2px solid #000;
+}
+
+.wrapper-product:active {
+  outline: 3px solid #83B3D3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
 .product-card-image {
   display: block;
 }
@@ -1047,10 +1071,13 @@ body {
 
 .product-card-title {
   color: #000000;
+  text-decoration: none;
+  width: 300px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  margin: 16px 0;
+  margin: 14px 0;
+  padding: 2px 0;
 }
 
 .container-product {
@@ -1134,6 +1161,25 @@ body {
 
 .product-image-stars {
   display: block;
+}
+
+.stars {
+  background: url(../images/star.svg);
+  align-self: center;
+  height: 17px;
+  background-repeat: space;
+}
+
+.stars-four {
+  width: 89px;
+}
+
+.stars-three {
+  width: 70px;
+}
+
+.stars-two {
+  width: 42px;
 }
 
 .product-card-rating {
@@ -1266,7 +1312,7 @@ body {
 }
 
 .modal-container-close {
-  /* display: none; */
+   display: none;
 }
 
 .modal {
@@ -1368,7 +1414,7 @@ body {
 .modal-input:focus,
 .quantity-input:focus {
   background-color: #E6E6E6;
-  outline: 3px solid #83B3D3;
+  box-shadow: inset 0 0 0 3px #83B3D3;
   border-radius: 4px;
 }
 
@@ -1422,13 +1468,16 @@ body {
 
 .minus-plus {
   display: flex;
-  width: 133px;
+  width: 135px;
+  margin: 0;
+  padding: 0;
   justify-content: space-between;
   min-height: 50px;
 }
 
 .quantity-input {
   font-family: inherit;
+  width: 45px;
   font-size: 18px;
   line-height: 21px;
   padding: 10px 12px 10px 6px;
@@ -1439,9 +1488,7 @@ body {
 .quantity-input,
 .button-minus,
 .button-plus {
-  width: 33%;
-  margin: 0;
-  padding: 0;
+  width: 45px;
   border: none;
   outline: none;
   background-color: #F2F2F2;
@@ -1506,7 +1553,7 @@ input[type='number'] {
 
 .form-label-icon {
   position: relative;
-  padding-right: 16px;
+  padding-right: 7px;
 }
 
 .tooltip {
@@ -1519,17 +1566,14 @@ input[type='number'] {
   background-color: #83B3D3;
 }
 
-.tooltip-icon {
-  width: 100%;
-  height: 100%;
-  fill: #fff;
-  display: block;
-  padding: 0 0 0 12px;
-}
-
 .tooltip-toggle {
+  position: relative;
+  top: 0;
+  left: 12px;
+  width: 1px;
+  height: 9px;
+  background-image: url(../images/info.svg);
   border: none;
-  background-color: #83B3D3;
   padding: 0;
   margin: 0;
 }
