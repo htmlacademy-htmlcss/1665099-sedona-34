@@ -559,7 +559,7 @@ body {
   color: #fff;
   background-color: #7397b6;
   background-image: url(../images/filter.jpg);
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 35px 0 70px;
 }
@@ -577,19 +577,24 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
   margin-left: 2px;
 }
 
-.breadcrumbs-link {
-  text-decoration: none;
+.breadcrumbs-item {
+  position: relative;
+  margin-right: 25px;
 }
 
 .breadcrumbs-item:not(:last-child)::after {
+  position: absolute;
+  top: -2px;
+  left: 100%;
+  padding-left: 4px;
   content: url(../images/right-arrow.svg);
-  display: inline-block;
   margin: 0 8px 0 5px;
 }
 
@@ -1293,7 +1298,7 @@ body {
 }
 
 .modal-container-close {
-   display: none;
+  display: none;
 }
 
 .modal {
