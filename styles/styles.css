@@ -179,11 +179,6 @@ body {
   background-color: #756157;
 }
 
-.navigation-button:disabled {
-  color: #fff;
-  background-color: #E5E5E5;
-}
-
 .main-container {
   flex-grow: 1;
 }
@@ -405,11 +400,6 @@ body {
   background-color: #756157;
 }
 
-.hotel-link:disabled {
-  color: #fff;
-  background-color: #E5E5E5;
-}
-
 /*Подписаться на рассылку*/
 
 .subscription {
@@ -569,7 +559,7 @@ body {
   color: #fff;
   background-color: #7397b6;
   background-image: url(../images/filter.jpg);
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 35px 0 70px;
 }
@@ -587,19 +577,24 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
   margin-left: 2px;
 }
 
-.breadcrumbs-link {
-  text-decoration: none;
+.breadcrumbs-item {
+  position: relative;
+  margin-right: 25px;
 }
 
 .breadcrumbs-item:not(:last-child)::after {
+  position: absolute;
+  top: -2px;
+  left: 100%;
+  padding-left: 4px;
   content: url(../images/right-arrow.svg);
-  display: inline-block;
   margin: 0 8px 0 5px;
 }
 
@@ -754,7 +749,7 @@ body {
 
 .control-checkbox:disabled+.mark-checkbox,
 .control-radio:disabled+.mark-radio {
-  color: rgba(255, 255, 255, 0.2);
+  opacity: 0.2;
 }
 
 
@@ -966,12 +961,6 @@ body {
   border-radius: 4px;
 }
 
-.select-control:disabled {
-  color: rgba(0, 0, 0, 0.3);
-  border: 2px solid rgba(0, 0, 0, 0.3);
-  border-radius: 4px;
-}
-
 .control-select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1136,13 +1125,6 @@ body {
   background-color: #756157;
 }
 
-.product-button:disabled,
-.product-card-button:disabled,
-.button-favorites:disabled {
-  color: #fff;
-  background-color: #E5E5E5;
-}
-
 .product-card-button:hover {
   background-color: #68A2CA;
 }
@@ -1172,6 +1154,10 @@ body {
   background-repeat: space;
 }
 
+.stars-five {
+  width: 105px;
+}
+
 .stars-four {
   width: 89px;
 }
@@ -1182,6 +1168,10 @@ body {
 
 .stars-two {
   width: 42px;
+}
+
+.stars-one {
+  width: 30px;
 }
 
 .product-card-rating {
@@ -1288,12 +1278,6 @@ body {
   border-radius: 4px;
 }
 
-.select-pagination:disabled {
-  color: rgba(0, 0, 0, 0.3);
-  border: 2px solid rgba(0, 0, 0, 0.3);
-  border-radius: 4px;
-}
-
 .pagination-select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1314,7 +1298,7 @@ body {
 }
 
 .modal-container-close {
-   display: none;
+  display: none;
 }
 
 .modal {
